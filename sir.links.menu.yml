@@ -1,0 +1,140 @@
+sir.top_level:
+  title: Instrument Elements
+  description: Manage Instrument Elements
+  route_name: rep.home
+  menu_name: main
+  weight: 70
+  requirements:
+    _permission: 'access content'
+    
+sir.search:
+  title: Search Instrument Elements
+  description: Search SIR Elements
+  route_name: sir.search
+  parent: sir.top_level
+  menu_name: main
+  enabled: 1
+  weight: 1
+  requirements:
+   _permission: 'access content'
+
+sir.divider1:
+  title: '_________________________________'
+  parent: sir.top_level
+  menu_name: main
+  weight: 9
+  route_name: '<none>'
+
+sir.manage_ins_files:
+  title: Manage INS Templates
+  description: Manage INS Templates
+  route_name: rep.select_mt_element
+  route_parameters:
+    elementtype: 'ins'
+    mode: 'table'
+    page: '1'
+    pagesize: '10'
+    studyuri: 'none'
+  parent: sir.top_level
+  menu_name: main
+  weight: 10
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+sir.divider2:
+  title: '_________________________________'
+  parent: sir.top_level
+  menu_name: main
+  weight: 19
+  route_name: '<none>'
+  
+sir.manage_instruments:
+  title: Manage Instruments
+  description: Manage Instruments
+  route_name: sir.select_element
+  route_parameters:
+    elementtype: 'instrument'
+    page: '1'
+    pagesize: '10'
+  parent: sir.top_level
+  menu_name: main
+  weight: 20
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+sir.manage_detectorstems :
+  title: Manage Detector Stems 
+  description: Manage Detector Stems
+  route_name: sir.select_element
+  route_parameters:
+    elementtype: 'detectorstem'
+    page: '1'
+    pagesize: '10'
+  parent: sir.top_level
+  menu_name: main
+  weight: 21
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+sir.manage_detectors :
+  title: Manage Detectors 
+  description: Manage Detectors
+  route_name: sir.select_element
+  route_parameters:
+    elementtype: 'detector'
+    page: '1'
+    pagesize: '10'
+  parent: sir.top_level
+  menu_name: main
+  weight: 22
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+sir.manage_codebooks :
+  title: Manage Codebooks 
+  description: Manage codebooks and their corresponding Response Options
+  route_name: sir.select_element
+  route_parameters:
+    elementtype: 'codebook'
+    page: '1'
+    pagesize: '10'
+  parent: sir.top_level
+  menu_name: main
+  weight: 23
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+sir.manage_responseoptions :
+  title: Manage Response Options 
+  description: Manage Response Options
+  route_name: sir.select_element
+  route_parameters:
+    elementtype: 'responseoption'
+    page: '1'
+    pagesize: '10'
+  parent: sir.top_level
+  menu_name: main
+  weight: 24
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+sir.manage_annotationstems :
+  title: Manage Annotation Stems 
+  description: Manage Annotation Stems
+  route_name: sir.select_element
+  route_parameters:
+    elementtype: 'annotationstem'
+    page: '1'
+    pagesize: '10'
+  parent: sir.top_level
+  menu_name: main
+  weight: 25
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
